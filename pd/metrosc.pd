@@ -1,0 +1,18 @@
+#N canvas 0 0 450 300 10;
+#X obj 117 57 inlet;
+#X text 114 40 freq;
+#X obj 117 103 line~;
+#X obj 118 127 osc~ \$1;
+#X obj 118 162 *~;
+#X obj 119 194 outlet~;
+#X text 231 144 attack/release line;
+#X obj 181 145 inlet~;
+#X obj 188 76 pack \$1 \$2;
+#X obj 284 56 inlet;
+#X connect 0 0 8 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 7 0 4 1;
+#X connect 8 0 2 0;
+#X connect 9 0 8 1;

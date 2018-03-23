@@ -1,0 +1,18 @@
+#N canvas 0 0 450 300 10;
+#X obj 101 101 hradio 15 1 0 3 empty empty 4/8/16 5 20 0 10 -1 -260097
+-1 0;
+#X obj 101 143 route 0 1 2;
+#X obj 101 48 inlet taktelsel;
+#X msg 100 197 4;
+#X msg 149 199 8;
+#X msg 200 197 16;
+#X obj 110 248 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 1 4 0;
+#X connect 1 2 5 0;
+#X connect 2 0 0 0;
+#X connect 3 0 6 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
+#X coords 0 -1 1 1 48 25 2 100 100;

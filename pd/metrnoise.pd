@@ -1,0 +1,9 @@
+#N canvas 117 411 450 300 10;
+#X obj 118 162 *~;
+#X obj 119 194 outlet~;
+#X text 231 144 attack/release line;
+#X obj 181 145 inlet~;
+#X obj 118 127 noise~;
+#X connect 0 0 1 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 0;

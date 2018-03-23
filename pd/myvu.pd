@@ -1,0 +1,13 @@
+#N canvas 60 391 549 418 10;
+#X obj -28 6 cnv 8 100 60 empty empty RMS_METER 20 20 1 18 -262144
+-1109 0;
+#X floatatom 3 281 6 0 0 0 - - -;
+#X obj 4 53 inlet~ audio;
+#X obj 3 83 env~;
+#X obj 3 125 - 101;
+#X obj 4 157 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X coords 0 -1 1 1 50 150 2 0 150;
